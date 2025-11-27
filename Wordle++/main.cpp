@@ -22,7 +22,26 @@ string getRandomWord() {
         }
         return true;
     }
-    string getRandomWord() {};
+    string getRandomWord() {
+    ifstream file("words.txt");
+    vector<string> words;
+    string line;
+
+    while (getline(file, line)) {
+        toUpperCase(line);
+        if (isValidWord(line))
+            words.push_back(line);
+    }
+
+    if (words.empty()) {
+        cout << "Error: word list is empty!" << endl;
+        return "READY";
+    }
+
+    srand(time(nullptr));
+    int index = rand() % words.size();
+    return words[index];
+}
 }
 int main() {
     vector<string> guesses(Number_of_guessed);
