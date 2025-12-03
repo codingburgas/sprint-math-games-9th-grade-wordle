@@ -1,39 +1,26 @@
-# Compiled Object files
 *.o
 *.obj
 *.ko
 *.elf
-
-# Precompiled Headers
 *.gch
 *.pch
-
-# Compiled Dynamic libraries
 *.so
 *.dylib
 *.dll
-
-# Compiled Static libraries
 *.a
 *.lib
 *.la
 *.lo
-
-# Executables
 *.exe
 *.out
 *.app
 *.i*86
 *.x86_64
 *.hex
-
-# Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
-
-# Build directories
 build/
 dist/
 bin/
@@ -43,17 +30,12 @@ Debug/
 Release/
 x64/
 x86/
-
-# CMake
 CMakeCache.txt
 CMakeFiles/
 cmake_install.cmake
 Makefile
 *.cmake
 !CMakeLists.txt
-
-# IDE specific files
-# Visual Studio
 .vs/
 *.vcxproj.user
 *.suo
@@ -62,49 +44,29 @@ Makefile
 *.sdf
 *.VC.db
 *.VC.opendb
-
-# VSCode
 .vscode/
 *.code-workspace
-
-# CLion / IntelliJ
 .idea/
 cmake-build-*/
-
-# Code::Blocks
 *.cbp
 *.layout
 *.depend
-
-# Xcode
 *.xcodeproj/
 *.xcworkspace/
-
-# OS files
 .DS_Store
 Thumbs.db
 *.swp
 *~
-
-# Core dumps
 core
 core.*
-
-# Dependency directories
 lib/
 libs/
 dependencies/
-
-# Test coverage
 *.gcda
 *.gcno
 *.gcov
 coverage/
-
-# Memory checker outputs
 valgrind-out.txt
 *.memcheck
-
-# Profiling data
 *.prof
 gmon.out
