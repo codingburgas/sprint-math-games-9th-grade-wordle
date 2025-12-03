@@ -124,6 +124,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Wordle++.cpp" />
+    <ClCompile Include="wordlist.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="wordlist.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,63 +1,50 @@
 #include <iostream>
-#include <vector>
-#include <string>
-#include <algorithm>
-#include <fstream>
+#include <cstdlib>
+#include "wordlist.h"
 
 using namespace std;
 
-const int Word_Length = 5;
-const int Not_Matched = 0;
-const int Partial_Matched = 1;
-const int Matched = 2;
-const int Number_of_guessed = 6;
-
-void toUpperCase(string& input) {
-    transform(input.begin(), input.end(), input.begin(),
-        [](unsigned char c) { return toupper(c); });
-}
-
-bool isValidWord(const string& word) {
-    if ((int)word.length() != Word_Length) return false;
-    for (char c : word) {
-        if (c < 'A' || c > 'Z') return false;
-    }
-    return true;
-}
-
-string getRandomWord() {
-   
-    return "READY";
-}
-
 int main() {
-    vector<string> guesses(Number_of_guessed);
-    vector<vector<int>> matches(Number_of_guessed);
+    srand(time(0));
 
-    string targetWord = getRandomWord();
+    Language lang;
+    GameMode mode;
+    Difficulty diff;
+    bool playAgain = true;
 
-    int currentTry = 0;
-    string input;
+    ui_welcome();
 
-    while (currentTry < Number_of_guessed) {
+    while (playAgain) {
+        
+        
+        ui_clear();
+        ui_show_difficulty_menu(lang);
+        int diffChoice;
+        cin >> diffChoice;
 
-        do {
-            cout << "Please enter your guess (word length must be "
-                << Word_Length << ") or type Q to quit: ";
-
-            getline(cin, input);
-            toUpperCase(input);
-
-        } while (input != "Q" && !isValidWord(input));
-
-        if (input == "Q") {
-            cout << "Quit game" << endl;
-            break;
+        switch (diffChoice) {
+        case 1: diff = EASY; break;
+        case 2: diff = MEDIUM; break;
+        case 3: diff = HARD; break;
+        case 4: diff = EXPERT; break;
+        default: diff = MEDIUM;
         }
 
-        guesses[currentTry] = input;
-        currentTry++;
+       
+        GameResult result = game_play(lang, mode, diff);
+
+       
+        ui_clear();
+        ui_show_result(result, lang);
 
         
+        cout << "\n";
+        ui_show_play_again(lang);
+        char choice;
+        cin >> choice;
+        playAgain = (choice == 'y' || choice == 'Y' || choice == 'ä' || choice == 'Ä' || choice == 'j' || choice == 'J');
     }
+
+    ui_goodbye(lang);
+    return 0;
 }
