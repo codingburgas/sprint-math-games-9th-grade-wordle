@@ -1,4 +1,8 @@
 #pragma once
-bool isValidWord() 
-   
-void toUpperCase()
+#ifndef FUNCTIONS_H
+#define FUNCTIONS_H
+
+void setColor(int color);
+void aboutUs();
+
+#endif

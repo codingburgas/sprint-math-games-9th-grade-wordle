@@ -1,7 +1,118 @@
-﻿  Wordle++.cpp
-C:\Users\niki1\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(3,10): error C1083: Cannot open include file: 'game.h': No such file or directory
-  wordlist.cpp
-C:\Users\niki1\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.h(4,10): error C1083: Cannot open include file: 'game.h': No such file or directory
-  (compiling source file 'wordlist.cpp')
+﻿  game.cpp
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(31,18): error C2660: 'wordlist_get_random_word': function does not take 1 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.h(9,8):
+      see declaration of 'wordlist_get_random_word'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(31,18):
+      while trying to match the argument list '(int)'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(49,14): error C2660: 'wordlist_is_valid_word': function does not take 1 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.h(10,6):
+      see declaration of 'wordlist_is_valid_word'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(49,14):
+      while trying to match the argument list '(std::string)'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(56,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ui.cpp
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(17,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(17,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(19,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(20,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(21,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(22,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(22,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(22,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(28,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(41,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(53,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(83,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(119,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(123,17): warning C4566: character represented by universal-character-name '\U0001F389' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(137,56): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(141,13): warning C4566: character represented by universal-character-name '\u2501' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(147,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(147,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
+  Wordle++.cpp
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(17,5): error C3861: 'ui_welcome': identifier not found
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(22,17): warning C4566: character represented by universal-character-name '\u00E4' cannot be represented in the current code page (1251)
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(34,9): error C2660: 'ui_show_mode_menu': function does not take 1 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(23,5):
+      see declaration of 'ui_show_mode_menu'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(34,9):
+      while trying to match the argument list '(Language)'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(41,9): error C2660: 'ui_show_difficulty_menu': function does not take 1 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(24,5):
+      see declaration of 'ui_show_difficulty_menu'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(41,9):
+      while trying to match the argument list '(Language)'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(58,9): error C2660: 'ui_show_result': function does not take 2 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(29,6):
+      see declaration of 'ui_show_result'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(58,9):
+      while trying to match the argument list '(GameResult, Language)'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(62,9): error C3861: 'ui_show_play_again': identifier not found
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(68,5): error C3861: 'ui_goodbye': identifier not found
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(70,2): error C2014: preprocessor command must start as first nonwhite space
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(80,5): error C2084: function 'int main(void)' already has a body
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(9,5):
+      see previous definition of 'main'
+  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(81,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(118,33): error C2660: 'game_play': function does not take 2 arguments
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.h(30,12):
+      see declaration of 'game_play'
+      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(118,33):
+      while trying to match the argument list '(GameMode, Difficulty)'
   
   Generating Code...

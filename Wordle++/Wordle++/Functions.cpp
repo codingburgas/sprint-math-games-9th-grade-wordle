@@ -1,12 +1,14 @@
-#include "aboutus.h"
-#include "ui.h"
 #include <iostream>
-#include <Windows.h>
+#include "windows.h"
 
 using namespace std;
 
-#define AQUA 3
+#define GREEN 2
+#define DARKBLUE 1
+#define RED 4
 #define WHITE 7
+#define GOLD 6
+#define AQUA 3
 
 void setColor(int color)
 {

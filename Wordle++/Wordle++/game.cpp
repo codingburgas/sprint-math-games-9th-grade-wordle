@@ -18,7 +18,7 @@ int game_get_length(Difficulty diff) {
     }
 }
 
-string game_generate_target(GameMode mode, Difficulty diff, Language lang) {
+string game_generate_target(GameMode mode, Difficulty diff) {
     int length = game_get_length(diff);
     string target = "";
 
@@ -28,13 +28,13 @@ string game_generate_target(GameMode mode, Difficulty diff, Language lang) {
         }
     }
     else {
-        target = wordlist_get_random_word(lang, length);
+        target = wordlist_get_random_word(length);
     }
 
     return target;
 }
 
-bool game_validate_input(string input, GameMode mode, int length, Language lang) {
+bool game_validate_input(string input, GameMode mode, int length) {
     if (input.length() != length) return false;
 
     if (mode == MODE_NUMBERS) {
@@ -46,7 +46,7 @@ bool game_validate_input(string input, GameMode mode, int length, Language lang)
         for (char c : input) {
             if (!isalpha(c)) return false;
         }
-        if (!wordlist_is_valid_word(input, lang)) return false;
+        if (!wordlist_is_valid_word(input)) return false;
     }
 
     return true;
@@ -58,16 +58,14 @@ FeedbackChar* game_check_guess(string guess, string target) {
     bool targetUsed[10] = { false };
     bool guessUsed[10] = { false };
 
-
     for (int i = 0; i < len; i++) {
         if (guess[i] == target[i]) {
             feedback[i].character = guess[i];
-            feedback[i].color = 2; // ?????
+            feedback[i].color = 2;
             targetUsed[i] = true;
             guessUsed[i] = true;
         }
     }
-
 
     for (int i = 0; i < len; i++) {
         if (!guessUsed[i]) {
@@ -75,7 +73,7 @@ FeedbackChar* game_check_guess(string guess, string target) {
             for (int j = 0; j < len; j++) {
                 if (!targetUsed[j] && guess[i] == target[j]) {
                     feedback[i].character = guess[i];
-                    feedback[i].color = 1; // ????
+                    feedback[i].color = 1;
                     targetUsed[j] = true;
                     found = true;
                     break;
@@ -83,7 +81,7 @@ FeedbackChar* game_check_guess(string guess, string target) {
             }
             if (!found) {
                 feedback[i].character = guess[i];
-                feedback[i].color = 0; // ???
+                feedback[i].color = 0;
             }
         }
     }
@@ -91,19 +89,18 @@ FeedbackChar* game_check_guess(string guess, string target) {
     return feedback;
 }
 
-GameResult game_play(Language lang, GameMode mode, Difficulty diff) {
+GameResult game_play(GameMode mode, Difficulty diff) {
     GameResult result;
     result.won = false;
     result.attempts = 0;
 
     int length = game_get_length(diff);
-    string target = game_generate_target(mode, diff, lang);
+    string target = game_generate_target(mode, diff);
     result.target = target;
 
     for (int attempt = 0; attempt < MAX_ATTEMPTS; attempt++) {
         ui_clear();
-        ui_show_game_header(lang, mode, diff, attempt + 1);
-
+        ui_show_game_header(mode, diff, attempt + 1);
 
         for (int i = 0; i < attempt; i++) {
             FeedbackChar* feedback = game_check_guess(result.guesses[i], target);
@@ -115,22 +112,21 @@ GameResult game_play(Language lang, GameMode mode, Difficulty diff) {
         bool validInput = false;
 
         while (!validInput) {
-            ui_show_input_prompt(lang, length, mode);
+            ui_show_input_prompt(length, mode);
             cin >> guess;
 
             transform(guess.begin(), guess.end(), guess.begin(), ::tolower);
 
-            if (game_validate_input(guess, mode, length, lang)) {
+            if (game_validate_input(guess, mode, length)) {
                 validInput = true;
             }
             else {
-                ui_show_invalid_input(lang);
+                ui_show_invalid_input();
             }
         }
 
         result.guesses[attempt] = guess;
         result.attempts = attempt + 1;
-
 
         if (guess == target) {
             result.won = true;
