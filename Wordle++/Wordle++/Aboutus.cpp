@@ -1,4 +1,4 @@
-#include "aboutus.h"
+
 #include "ui.h"
 #include <iostream>
 #include <Windows.h>

@@ -4,7 +4,7 @@
 #include "game.h"      
 #include "ui.h"
 #include "wordlist.h"
-#include "Functions.h"
+#include "Aboutus.cpp"
 
 using namespace std;
 

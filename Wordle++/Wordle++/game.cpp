@@ -28,7 +28,7 @@ string game_generate_target(GameMode mode, Difficulty diff) {
         }
     }
     else {
-        target = Ñordlist_get_random_word(length);
+        target = string(wordlist_get_random_word(length));
     }
 
     return target;
