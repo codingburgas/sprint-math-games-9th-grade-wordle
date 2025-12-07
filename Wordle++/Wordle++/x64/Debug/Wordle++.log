@@ -1,4 +1,6 @@
-﻿  game.cpp
+﻿  Aboutus.cpp
+  game.cpp
+  ui.cpp
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(31,18): error C2660: 'wordlist_get_random_word': function does not take 1 arguments
       C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.h(9,8):
       see declaration of 'wordlist_get_random_word'
@@ -12,7 +14,6 @@ C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-word
       while trying to match the argument list '(std::string)'
   
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(56,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
-  ui.cpp
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(17,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(17,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1251)
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(18,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1251)
@@ -80,39 +81,7 @@ C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-word
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1251)
 C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1251)
   Wordle++.cpp
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(10,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(17,5): error C3861: 'ui_welcome': identifier not found
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(22,17): warning C4566: character represented by universal-character-name '\u00E4' cannot be represented in the current code page (1251)
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(34,9): error C2660: 'ui_show_mode_menu': function does not take 1 arguments
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(23,5):
-      see declaration of 'ui_show_mode_menu'
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(34,9):
-      while trying to match the argument list '(Language)'
-  
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(41,9): error C2660: 'ui_show_difficulty_menu': function does not take 1 arguments
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(24,5):
-      see declaration of 'ui_show_difficulty_menu'
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(41,9):
-      while trying to match the argument list '(Language)'
-  
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(58,9): error C2660: 'ui_show_result': function does not take 2 arguments
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.h(29,6):
-      see declaration of 'ui_show_result'
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(58,9):
-      while trying to match the argument list '(GameResult, Language)'
-  
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(62,9): error C3861: 'ui_show_play_again': identifier not found
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(68,5): error C3861: 'ui_goodbye': identifier not found
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(70,2): error C2014: preprocessor command must start as first nonwhite space
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(80,5): error C2084: function 'int main(void)' already has a body
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(9,5):
-      see previous definition of 'main'
-  
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(81,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
-C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(118,33): error C2660: 'game_play': function does not take 2 arguments
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.h(30,12):
-      see declaration of 'game_play'
-      C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(118,33):
-      while trying to match the argument list '(GameMode, Difficulty)'
-  
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(12,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  wordlist.cpp
+C:\Users\yanko\OneDrive\Работен плот\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.cpp(126,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
   Generating Code...

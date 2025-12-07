@@ -1,12 +1,12 @@
+#pragma once
+
 #ifndef WORDLIST_H
 #define WORDLIST_H
-#pragma once
-#include "game.h"
-#include <string>
 
+#include <string>
 using namespace std;
 
-string wordlist_get_random_word(Language lang, int length);
-bool wordlist_is_valid_word(string word, Language lang);
+string wordlist_get_random_word(int length);
+bool wordlist_is_valid_word(const string& word);
 
 #endif

@@ -28,14 +28,14 @@ string game_generate_target(GameMode mode, Difficulty diff) {
         }
     }
     else {
-        target = wordlist_get_random_word(length);
+        target = Ñordlist_get_random_word(length);
     }
 
     return target;
 }
 
 bool game_validate_input(string input, GameMode mode, int length) {
-    if (input.length() != length) return false;
+    if ((int)input.length() != length) return false;
 
     if (mode == MODE_NUMBERS) {
         for (char c : input) {

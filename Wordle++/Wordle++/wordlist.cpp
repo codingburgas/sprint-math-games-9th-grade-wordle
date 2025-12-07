@@ -1,9 +1,7 @@
 #include "wordlist.h"
 #include <cstdlib>
-#include <algorithm>
 
 using namespace std;
-
 
 const string words_en_4[] = {
     "able", "acid", "aged", "also", "area", "army", "away", "baby", "back", "ball",
@@ -29,7 +27,6 @@ const string words_en_4[] = {
 };
 const int SIZE_EN_4 = 200;
 
-
 const string words_en_5[] = {
     "about", "above", "abuse", "actor", "acute", "admit", "adopt", "adult", "after", "again",
     "agent", "agree", "ahead", "alarm", "album", "alert", "align", "alike", "alive", "allow",
@@ -53,7 +50,6 @@ const string words_en_5[] = {
     "focus", "force", "forth", "forty", "forum", "found", "frame", "frank", "fraud", "fresh"
 };
 const int SIZE_EN_5 = 200;
-
 
 const string words_en_6[] = {
     "accept", "access", "across", "acting", "action", "active", "actual", "advice", "advise", "affair",
@@ -79,7 +75,6 @@ const string words_en_6[] = {
 };
 const int SIZE_EN_6 = 200;
 
-
 const string words_en_7[] = {
     "ability", "absence", "academy", "account", "accused", "achieve", "acquire", "address", "advance", "adverse",
     "advised", "adviser", "advocate", "against", "alcohol", "alleged", "alliance", "already", "altered", "amazing",
@@ -104,12 +99,7 @@ const string words_en_7[] = {
 };
 const int SIZE_EN_7 = 200;
 
-
-string wordlist_get_random_word(Language lang, int length) {
-    if (lang != ENGLISH) {
-        lang = ENGLISH;
-    }
-
+string wordlist_get_random_word(int length) {
     if (length == 4) {
         return words_en_4[rand() % SIZE_EN_4];
     }
@@ -122,11 +112,10 @@ string wordlist_get_random_word(Language lang, int length) {
     else if (length == 7) {
         return words_en_7[rand() % SIZE_EN_7];
     }
-
     return "hello";
 }
 
-bool wordlist_is_valid_word(string word, Language lang) {
+bool wordlist_is_valid_word(string word) {
     int len = word.length();
     const string* wordlist;
     int size;
@@ -157,5 +146,5 @@ bool wordlist_is_valid_word(string word, Language lang) {
         }
     }
 
-    return true;
+    return false;
 }
