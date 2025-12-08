@@ -20,10 +20,10 @@ Guess the hidden word within limited number of attempts, using hints about corre
  
 ### Documentation
  
-[ Documentation]()
+[ Documentation](https://codingburgas-my.sharepoint.com/:w:/r/personal/yayanev24_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B96E5C0A1-1692-426E-BD20-51973E2E9706%7D&file=Document%202.docx&action=editNew&mobileredirect=true&wdOrigin=SEARCHENGINE.GOOGLE%2CAPPHOME-WEB.BANNER.NEWBLANK&wdPreviousSession=c68e0147-4424-41a2-ad20-61b8679b7359&wdPreviousSessionSrc=AppHomeWeb&ct=1765225729660)
 
 ### Presentation
-[Presentation]()
+[Presentation](https://codingburgas-my.sharepoint.com/:p:/r/personal/yayanev24_codingburgas_bg/_layouts/15/Doc.aspx?sourcedoc=%7B7FBBE635-C9B7-4299-90CE-13A3C684D2B3%7D&file=Wordle%2B%2B%20-%20Presentation%20(1).pptx&action=edit&mobileredirect=true&wdOrigin=SEARCHENGINE.GOOGLE%2CAPPHOME-WEB.BANNER.UPLOAD&wdPreviousSession=3ea43364-42ed-40dd-9f85-28f724e1304f&wdPreviousSessionSrc=AppHomeWeb&ct=1765228822483)
 <br></br>
 ## 🚀 How to run <a name="install"></a>
 *The following instructions are going to show you how to set up the project*
