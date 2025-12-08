@@ -1,6 +1,6 @@
 <h1 align="center"> Wordle++ <h1>
  
-<div align="center"> <img src="" /> </div>
+<div align="center"> <img src="logo/Wordle_.jpg" /> </div>
  
 ## 📋 Table of contents
   - [Description](#description)
