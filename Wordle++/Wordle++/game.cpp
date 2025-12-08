@@ -28,14 +28,14 @@ string game_generate_target(GameMode mode, Difficulty diff) {
         }
     }
     else {
-        target = string(wordlist_get_random_word(length));
+        target = wordlist_get_random_word(ENGLISH, length);
     }
 
     return target;
 }
 
 bool game_validate_input(string input, GameMode mode, int length) {
-    if ((int)input.length() != length) return false;
+    if (input.length() != length) return false;
 
     if (mode == MODE_NUMBERS) {
         for (char c : input) {
@@ -46,7 +46,7 @@ bool game_validate_input(string input, GameMode mode, int length) {
         for (char c : input) {
             if (!isalpha(c)) return false;
         }
-        if (!wordlist_is_valid_word(input)) return false;
+        if (!wordlist_is_valid_word(input, ENGLISH)) return false;
     }
 
     return true;

@@ -1,7 +1,10 @@
-
+#include "Functions.h"
 #include "ui.h"
 #include <iostream>
 #include <Windows.h>
+#include "aboutus.h"
+
+
 
 using namespace std;
 
@@ -14,7 +17,7 @@ void setColor(int color)
     SetConsoleTextAttribute(hConsole, color);
 }
 
-void aboutUs()
+void show_about_us()
 {
     setColor(AQUA);
     cout << "\n";
@@ -27,8 +30,8 @@ void aboutUs()
     cout << "                        ||                    and game development.                      ||\n";
     cout << "                        ||                                                               ||\n";
     cout << "                        ||                        Our Projects:                          ||\n";
-    cout << "                        ||                 1. Number Wordle (5-digit puzzle)             ||\n";
-    cout << "                        ||                 2. Classic Wordle (5-letter puzzle)           ||\n";
+    cout << "                        ||            1. Number Wordle (4,5,6 and 7 - digit puzzle)      ||\n";
+    cout << "                        ||            2. Classic Wordle (4,5,6 and 7-letter puzzle)      ||\n";
     cout << "                        ||                                                               ||\n";
     cout << "                        ||                  Thank you for playing with us!               ||\n";
     cout << "                         ================================================================                         \n\n";

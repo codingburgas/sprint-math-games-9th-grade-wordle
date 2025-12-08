@@ -1,8 +1,39 @@
-﻿Functions.obj : error LNK2005: "void __cdecl aboutUs(void)" (?aboutUs@@YAXXZ) already defined in Aboutus.obj
-Functions.obj : error LNK2005: "void __cdecl setColor(int)" (?setColor@@YAXH@Z) already defined in Aboutus.obj
-Wordle++.obj : error LNK2005: "void __cdecl aboutUs(void)" (?aboutUs@@YAXXZ) already defined in Aboutus.obj
-Wordle++.obj : error LNK2005: "void __cdecl setColor(int)" (?setColor@@YAXH@Z) already defined in Aboutus.obj
-game.obj : error LNK2019: unresolved external symbol "bool __cdecl wordlist_is_valid_word(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &)" (?wordlist_is_valid_word@@YA_NAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z) referenced in function "bool __cdecl game_validate_input(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,enum GameMode,int)" (?game_validate_input@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@W4GameMode@@H@Z)
-    Hint on symbols that are defined and could potentially match:
-      "bool __cdecl wordlist_is_valid_word(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)" (?wordlist_is_valid_word@@YA_NV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z)
-C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\x64\Debug\Wordle++.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Aboutus.cpp
+  Wordle++.cpp
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\Wordle++.cpp(16,15): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  game.cpp
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\game.cpp(56,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  ui.cpp
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(124,17): warning C4566: character represented by universal-character-name '\U0001F389' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(138,56): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(148,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(149,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(150,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2554' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(151,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u2588' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u2551' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(152,13): warning C4566: character represented by universal-character-name '\u2557' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(153,13): warning C4566: character represented by universal-character-name '\u255A' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(153,13): warning C4566: character represented by universal-character-name '\u2550' cannot be represented in the current code page (1252)
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\ui.cpp(153,13): warning C4566: character represented by universal-character-name '\u255D' cannot be represented in the current code page (1252)
+  wordlist.cpp
+C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\Wordle++\wordlist.cpp(342,13): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+  Generating Code...
+  Wordle++.vcxproj -> C:\Users\Ina\Desktop\sprint-math-games-9th-grade-wordle\Wordle++\x64\Debug\Wordle++.exe

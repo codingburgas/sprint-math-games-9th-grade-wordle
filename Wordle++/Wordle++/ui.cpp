@@ -12,20 +12,21 @@ void ui_clear() {
 }
 
 void ui_show_ascii_logo() {
-    cout << COLOR_BLUE << COLOR_BOLD;
+    cout << COLOR_BLUE;
     cout << "\n";
-    cout << "  ██╗    ██╗ ██████╗ ██████╗ ██████╗ ██╗     ███████╗   ██╗    ██╗\n";
-    cout << "  ██║    ██║██╔═══██╗██╔══██╗██╔══██╗██║     ██╔════╝ ██████╗ ██████╗\n";
-    cout << "  ██║ █╗ ██║██║   ██║██████╔╝██║  ██║██║     █████╗   ╚═██╔═╝ ╚═██╔═╝\n";
-    cout << "  ██║███╗██║██║   ██║██╔══██╗██║  ██║██║     ██╔══╝     ╚═╝     ╚═╝\n";
-    cout << "  ╚███╔███╔╝╚██████╔╝██║  ██║██████╔╝███████╗███████╗   ██╗     ██╗\n";
-    cout << "   ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚══════╝╚══════╝   ╚═╝     ╚═╝\n";
+    cout << "  _     _  _______  ______    ______   ___      _______    _       _ " << endl;
+    cout << " | | _ | ||       ||    _ |  |      | |   |    |       | _| |_   _| |_   " << endl;
+    cout << " | || || ||   _   ||   | ||  |  _    ||   |    |    ___||_   _| |_   _|  " << endl;
+    cout << " |       ||  | |  ||   |_||_ | | |   ||   |    |   |___   |_|     |_|   " << endl;
+    cout << " |       ||  |_|  ||    __  || |_|   ||   |___ |    ___|               " << endl;
+    cout << " |   _   ||       ||   |  | ||       ||       ||   |___                   " << endl;
+    cout << " |__| |__||_______||___|  |_||______| |_______||_______|     " << endl;
+
     cout << COLOR_RESET << "\n";
 }
-
 int ui_show_main_menu() {
     cout << COLOR_BOLD << "MAIN MENU" << COLOR_RESET << "\n";
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+    cout << "--------------------------------\n";
     cout << "1. Play Game\n";
     cout << "2. About Us\n";
     cout << "3. Exit\n\n";
@@ -38,7 +39,7 @@ int ui_show_main_menu() {
 
 int ui_show_mode_menu() {
     cout << COLOR_BOLD << "SELECT GAME MODE" << COLOR_RESET << "\n";
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+    cout << "--------------------------------\n";
     cout << "1. Number Wordle\n";
     cout << "2. Word Wordle\n\n";
     cout << "Enter your choice: ";
@@ -50,7 +51,7 @@ int ui_show_mode_menu() {
 
 int ui_show_difficulty_menu() {
     cout << COLOR_BOLD << "SELECT DIFFICULTY" << COLOR_RESET << "\n";
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+    cout << "--------------------------------\n";
     cout << "1. Easy (4 digits/letters)\n";
     cout << "2. Medium (5 digits/letters)\n";
     cout << "3. Hard (6 digits/letters)\n";
@@ -80,7 +81,7 @@ void ui_show_game_header(GameMode mode, Difficulty diff, int attempt) {
     }
 
     cout << " (Attempt " << attempt << "/" << MAX_ATTEMPTS << ")" << COLOR_RESET << "\n";
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n";
+    cout << "--------------------------------\n\n";
 }
 
 void ui_show_input_prompt(int length, GameMode mode) {
@@ -116,7 +117,7 @@ void ui_show_feedback(FeedbackChar* feedback, int length) {
 
 void ui_show_result(GameResult result) {
     cout << "\n";
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+    cout << "--------------------------------\n";
 
     if (result.won) {
         cout << COLOR_GREEN << COLOR_BOLD;
@@ -138,7 +139,7 @@ void ui_show_result(GameResult result) {
         delete[] feedback;
     }
 
-    cout << "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n";
+    cout << "--------------------------------\n";
 }
 
 void ui_show_goodbye() {

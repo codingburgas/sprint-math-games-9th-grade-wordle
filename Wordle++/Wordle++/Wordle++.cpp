@@ -3,18 +3,17 @@
 #include "game.h"
 #include "ui.h"
 #include "wordlist.h"
+#include "Functions.h"
+#include "aboutus.h"
+#include <ctime>
+#include <Windows.h>
+
+
 
 using namespace std;
 
 int main() {
     srand(time(0));
-
-    Language lang;
-    GameMode mode;
-    Difficulty diff;
-    bool playAgain = true;
-
-
     bool running = true;
 
     while (running) {
@@ -24,6 +23,7 @@ int main() {
         int mainChoice = ui_show_main_menu();
 
         if (mainChoice == 1) {
+            // Play Game
             ui_clear();
             int modeChoice = ui_show_mode_menu();
 
@@ -50,77 +50,30 @@ int main() {
             default: continue;
             }
 
-            GameResult result = game_play(lang, mode, diff);
+            // Стартиране на играта
+            GameResult result = game_play(mode, diff);
 
+            // Показване на резултата
             ui_clear();
             ui_show_result(result);
 
-            std::cout << "\nPress ENTER to continue...";
-            std::cin.ignore();
-            std::cin.get();
-
+            cout << "\nPress ENTER to continue...";
+            cin.ignore();
+            cin.get();
         }
         else if (mainChoice == 2) {
+            // About Us
             ui_clear();
-
-
+            show_about_us();
         }
+
         else if (mainChoice == 3) {
+            // Exit
             running = false;
             ui_clear();
             ui_show_goodbye();
         }
     }
 
-
-    while (playAgain) {
-
-        ui_clear();
-        std::cout << "Select Language / Избери Език / Sprache wählen:\n";
-        std::cout << "1. English\n2. Български\n3. Deutsch\n";
-        int langChoice;
-        std::cin >> langChoice;
-
-        switch (langChoice) {
-        case 1: lang = ENGLISH; break;
-
-        default: lang = ENGLISH;
-        }
-
-        ui_clear();
-        ui_show_mode_menu();
-        int modeChoice;
-        std::cin >> modeChoice;
-        mode = (modeChoice == 1) ? MODE_NUMBERS : MODE_LETTERS;
-
-
-        ui_clear();
-        ui_show_difficulty_menu();
-        int diffChoice;
-        std::cin >> diffChoice;
-
-        switch (diffChoice) {
-        case 1: diff = EASY; break;
-        case 2: diff = MEDIUM; break;
-        case 3: diff = HARD; break;
-        case 4: diff = EXPERT; break;
-        default: diff = MEDIUM;
-        }
-
-
-        GameResult result = game_play(lang, mode, diff);
-
-
-        ui_clear();
-        ui_show_result(result);
-
-
-        std::cout << "\n";
-
-        char choice;
-        std::cin >> choice;
-        playAgain = (choice == 'y' || choice == 'Y' || choice == 'д' || choice == 'Д' || choice == 'j' || choice == 'J');
-    }
-
-
     return 0;
+}

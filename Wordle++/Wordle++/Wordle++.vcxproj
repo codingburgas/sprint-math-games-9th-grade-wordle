@@ -124,13 +124,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Aboutus.cpp" />
-    <ClCompile Include="Functions.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="ui.cpp" />
     <ClCompile Include="Wordle++.cpp" />
     <ClCompile Include="wordlist.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Aboutus.h" />
+    <ClInclude Include="Functions.h" />
     <ClInclude Include="game.h" />
     <ClInclude Include="ui.h" />
     <ClInclude Include="wordlist.h" />

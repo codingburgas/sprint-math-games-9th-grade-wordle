@@ -1,26 +1,18 @@
+#pragma once
 #ifndef GAME_H
 #define GAME_H
 
 #include <string>
 using namespace std;
 
-enum Language {
-    ENGLISH
-};
 
-enum GameMode {
-    MODE_NUMBERS,
-    MODE_LETTERS
-};
+enum Language { ENGLISH };
+enum GameMode { MODE_NUMBERS, MODE_LETTERS };
+enum Difficulty { EASY, MEDIUM, HARD, EXPERT };
 
-enum Difficulty {
-    EASY,
-    MEDIUM,
-    HARD,
-    EXPERT
-};
 
 const int MAX_ATTEMPTS = 6;
+
 
 struct GameResult {
     bool won;
@@ -31,8 +23,10 @@ struct GameResult {
 
 struct FeedbackChar {
     char character;
-    int color;
+    int color; // 0=grey, 1=yellow, 2=green
 };
+
+
 
 GameResult game_play(GameMode mode, Difficulty diff);
 string game_generate_target(GameMode mode, Difficulty diff);
