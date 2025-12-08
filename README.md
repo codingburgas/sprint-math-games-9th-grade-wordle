@@ -55,6 +55,8 @@ Guess the hidden word within limited number of attempts, using hints about corre
 <a href="https://visualstudio.microsoft.com/ru/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Visual_Studio_Icon_2019.svg/2060px-Visual_Studio_Icon_2019.svg.png" alt="VS logo" width="60"/></a>
 <a href=""><img src="https://images.icon-icons.com/3685/PNG/512/github_logo_icon_229278.png" alt="github logo" width="60"/></a>
 <a href="https://www.microsoft.com/en-us/microsoft-teams/group-chat-software"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Microsoft_Office_Teams_%282019%E2%80%932025%29.svg/2203px-Microsoft_Office_Teams_%282019%E2%80%932025%29.svg.png" alt="Teams Icon" width="63"/></a>
+<a href="https://powerpoint.cloud.microsoft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Microsoft_Office_PowerPoint_%282025%E2%80%93present%29.svg/1200px-Microsoft_Office_PowerPoint_%282025%E2%80%93present%29.svg.png" alt="PowerPoint Icon" width="63"/></a>
+<a href="https://word.cloud.microsoft"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Microsoft_Office_Word_%282025%E2%80%93present%29.svg/1990px-Microsoft_Office_Word_%282025%E2%80%93present%29.svg.png" alt="Word Icon" width="63"/></a>
 <br></br>
 <br></br>
 ## 🧑 Collaborators <a name="collaborators"></a>
